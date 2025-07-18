@@ -124,7 +124,7 @@ export default function LandingPage() {
           <Card className="p-8 border-4 border-orange-200 bg-orange-50">
             <CardContent className="pt-6">
               <div className="text-center mb-6">
-                <div className="text-5xl font-bold text-orange-600 mb-2">¥10,000</div>
+                <div className="text-5xl font-bold text-orange-600 mb-2">¥15,000</div>
                 <div className="text-gray-600">（税込）</div>
               </div>
               <div className="space-y-4 mb-8">
