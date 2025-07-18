@@ -1,8 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { CheckCircle, DollarSign, Users, Zap } from "lucide-react"
 
 export default function LandingPage() {
@@ -157,54 +154,17 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* CTA Section */}
       <section className="px-4 py-16 bg-gray-900 text-white">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">申し込みフォーム</h2>
-          <Card className="bg-white text-gray-900">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-base font-medium">
-                    お名前 <span className="text-red-500">*</span>
-                  </Label>
-                  <Input id="name" type="text" required className="mt-2 h-12 text-base" placeholder="山田 太郎" />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="text-base font-medium">
-                    メールアドレス <span className="text-red-500">*</span>
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    required
-                    className="mt-2 h-12 text-base"
-                    placeholder="example@email.com"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="theme" className="text-base font-medium">
-                    LPに使いたいテーマ・サービス内容 <span className="text-gray-500">（任意）</span>
-                  </Label>
-                  <Textarea
-                    id="theme"
-                    className="mt-2 min-h-[100px] text-base"
-                    placeholder="例：ハンドメイドアクセサリーの販売、コーチングサービス、オンライン講座など"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
-                >
-                  🔶 申し込む（すぐにLP制作スタート）
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">今すぐ始めましょう</h2>
+          <p className="text-xl text-gray-300 mb-8">あなたの理想のランディングページを作成する準備はできていますか？</p>
+          <Button
+            size="lg"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+          >
+            🔶 申し込む（すぐにLP制作スタート）
+          </Button>
         </div>
       </section>
 
